@@ -1,0 +1,63 @@
+@media only screen and (max-width: 414px),
+  only screen and (max-device-width: 414px) {
+  html,
+  body {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 400px),
+  only screen and (max-device-width: 400px) {
+  html,
+  body {
+    font-size: 21.33px;
+  }
+}
+@media only screen and (max-width: 375px),
+  only screen and (max-device-width: 375px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 360px),
+  only screen and (max-device-width: 360px) {
+  html,
+  body {
+    font-size: 19.2px;
+  }
+}
+@media only screen and (max-width: 320px),
+  only screen and (max-device-width: 320px) {
+  html,
+  body {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 400px),
+  only screen and (max-device-width: 400px) {
+  html,
+  body {
+    font-size: 21.33px;
+  }
+}
+@media only screen and (max-width: 375px),
+  only screen and (max-device-width: 375px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 360px),
+  only screen and (max-device-width: 360px) {
+  html,
+  body {
+    font-size: 19.2px;
+  }
+}
+@media only screen and (max-width: 320px),
+  only screen and (max-device-width: 320px) {
+  html,
+  body {
+    font-size: 17px;
+  }
+}

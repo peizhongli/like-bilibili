@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+ul, li {
+  list-style: none;
+}
+button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+input {
+  border: 0;
+  outline: none;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  zoom: 1;
+}
