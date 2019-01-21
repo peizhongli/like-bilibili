@@ -1,6 +1,6 @@
 <template>
   <ul class="footer">
-    <router-link to="/" exact tag="li">首页</router-link>
+    <router-link to="/home" tag="li">首页</router-link>
     <router-link to="/channel" tag="li">频道</router-link>
     <router-link to="/dynamic" tag="li">动态</router-link>
   </ul>

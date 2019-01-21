@@ -1,18 +1,33 @@
 <template>
-  <div class="header clearfix">
-    <button class="sidebar-button"></button>
-    <div class="search-box">
-      <input type="text" class="search-area">
+  <div>
+    <div class="header clearfix">
+      <button class="sidebar-button" @click="sidebarIsShow=!sidebarIsShow"></button>
+      <div class="search-box">
+        <input type="text" class="search-area">
+      </div>
+      <ul class="function-box">
+        <router-link to="/game" tag="li"></router-link>
+        <router-link to="/load" tag="li"></router-link>
+        <router-link to="/message" tag="li"></router-link>
+      </ul>
     </div>
-    <ul class="function-box">
-      <router-link to="/game" tag="li"></router-link>
-      <router-link to="/load" tag="li"></router-link>
-      <router-link to="/message" tag="li"></router-link>
-    </ul>
+    <div class="sider-bg" v-show="sidebarIsShow" @click="sidebarIsShow=!sidebarIsShow"></div>
+    <transition name="slide-left">
+      <siderBar v-show="sidebarIsShow"></siderBar>
+    </transition>
   </div>
 </template>
 <script>
-export default {}
+import siderBar from './sideBar.vue'
+
+export default {
+  data () {
+    return {
+      sidebarIsShow: false
+    }
+  },
+  components: {siderBar}
+}
 </script>
 <style scoped>
 .header {
@@ -71,5 +86,20 @@ ul.function-box li:nth-child(2) {
 ul.function-box li:last-child {
   background-image: url(../assets/images/icons/message.png);
   margin-right: 0;
+}
+.sider-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+.slide-left-enter-active, .slide-left-leave-active  {
+  transition: all .3s;
+}
+.slide-left-enter, .slide-left-leave-to  {
+  transform: translateX(-100%);
 }
 </style>

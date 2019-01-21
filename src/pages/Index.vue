@@ -1,10 +1,10 @@
 <template>
   <div>
     <ul class="nav">
-      <router-link to="/live" tag="li">直播</router-link>
-      <router-link to="/recommend" tag="li">推荐</router-link>
-      <router-link to="/hot" tag="li">热门</router-link>
-      <router-link to="/subscribe" tag="li">追番</router-link>
+      <router-link to="/home/live" tag="li">直播</router-link>
+      <router-link to="/home/recommend" tag="li">推荐</router-link>
+      <router-link to="/home/hot" tag="li">热门</router-link>
+      <router-link to="/home/subscribe" tag="li">追番</router-link>
     </ul>
     <router-view></router-view>
   </div>
@@ -28,4 +28,3 @@
     border-color: #fb7299;
   }
 </style>
-

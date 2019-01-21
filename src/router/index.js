@@ -17,6 +17,36 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/home/recommend'
+    },
+    {
+      path: '/home',
+      component: index,
+      children: [
+        {
+          path: 'live',
+          name: 'live',
+          component: live
+        },
+        {
+          path: 'recommend',
+          name: 'recommend',
+          component: recommend
+        },
+        {
+          path: 'hot',
+          name: 'hot',
+          component: hot
+        },
+        {
+          path: 'subscribe',
+          name: 'subscribe',
+          component: subscribe
+        }
+      ]
+    },
+    {
+      path: '/home',
       name: 'index',
       component: index,
       children: [
