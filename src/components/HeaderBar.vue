@@ -62,6 +62,8 @@ export default {
 .search-box input {
   display: block;
   background-color: transparent;
+  color: #fff;
+  font-size: 12px;
 }
 ul.function-box {
   float: right;
@@ -81,7 +83,6 @@ ul.function-box li:first-child {
 }
 ul.function-box li:nth-child(2) {
   background-image: url(../assets/images/icons/load.png);
-  background-size: 80% auto;
 }
 ul.function-box li:last-child {
   background-image: url(../assets/images/icons/message.png);
@@ -100,6 +101,6 @@ ul.function-box li:last-child {
   transition: all .3s;
 }
 .slide-left-enter, .slide-left-leave-to  {
-  transform: translateX(-100%);
+  margin-left: -100%;
 }
 </style>

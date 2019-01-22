@@ -13,7 +13,8 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    box-shadow: 0 -0.01px 0.01rem 0 #999;
+    box-shadow: 0 0 0.01rem 0 rgba(0, 0, 0, .2);
+    background-color: #fff;
   }
   ul.footer li {
     display: inline-block;
@@ -23,19 +24,17 @@
     font-size: 12px;
     color: #555;
     text-align: center;
-    background: center 0.2rem no-repeat;
-    background-size: 70% auto;
+    background: center 0.3rem no-repeat;
+    background-size: 55% auto;
   }
   ul.footer li:first-child {
     background-image: url(../assets/images/icons/house.png);
   }
   ul.footer li:nth-child(2) {
     background-image: url(../assets/images/icons/channel.png);
-    background-size: 55% auto;
-    background-position: center 0.34rem;
   }
   ul.footer li:last-child {
-    background-image: url(../assets/images/icons/star.png);
+    background-image: url(../assets/images/icons/dynamic.png);
   }
   ul.footer li.router-link-active {
     color: #fb7299;
@@ -47,6 +46,6 @@
     background-image: url(../assets/images/icons/channel-pink.png);
   }
   ul.footer li:last-child.router-link-active {
-    background-image: url(../assets/images/icons/star-pink.png);
+    background-image: url(../assets/images/icons/dynamic-pink.png);
   }
 </style>

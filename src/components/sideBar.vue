@@ -18,21 +18,21 @@
       <li>1<br />粉丝</li>
     </ul>
     <ul class="sidebar">
-      <li>首页</li>
-      <li>历史记录</li>
-      <li>离线缓存</li>
-      <li>我的收藏</li>
-      <li>稍后再看</li>
+      <li class="index">首页</li>
+      <li class="history">历史记录</li>
+      <li class="cache">离线缓存</li>
+      <li class="collect">我的收藏</li>
+      <li class="soon">稍后再看</li>
     </ul>
     <ul class="sidebar">
-      <li>投稿</li>
-      <li>创作中心</li>
-      <li>热门活动</li>
+      <li class="contribute">投稿</li>
+      <li class="creation">创作中心</li>
+      <li class="activity">热门活动</li>
     </ul>
     <ul class="sidebar">
-      <li>直播中心</li>
-      <li>我的大会员</li>
-      <li>免流量服务</li>
+      <li class="live">直播中心</li>
+      <li class="member">我的大会员</li>
+      <li class="flow">免流量服务</li>
     </ul>
     <ul class="setup-bar">
       <li>设置</li>
@@ -46,7 +46,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 15;
     width: 70%;
     height: 100%;
     font-size: 14px;
@@ -103,9 +103,42 @@
     border-bottom: 1px solid #ccc;
   }
   ul.sidebar li {
-    padding: 0.4rem 0 0.4rem 2.6rem;
-    background: url(../assets/images/icons/house.png) 0.6rem center no-repeat;
-    background-size: auto 1rem;
+    padding: 0.4rem 0 0.4rem 2.2rem;
+    background: 0.6rem center no-repeat;
+    background-size: 1rem auto;
+  }
+  ul.sidebar .index {
+    background-image: url(../assets/images/icons/house2.png);
+  }
+  ul.sidebar .history {
+    background-image: url(../assets/images/icons/history.png);
+  }
+  ul.sidebar .cache {
+    background-image: url(../assets/images/icons/cache.png);
+  }
+  ul.sidebar .collect {
+    background-image: url(../assets/images/icons/collect.png);
+  }
+  ul.sidebar .soon {
+    background-image: url(../assets/images/icons/movie.png);
+  }
+  ul.sidebar .contribute {
+    background-image: url(../assets/images/icons/upload.png);
+  }
+  ul.sidebar .creation {
+    background-image: url(../assets/images/icons/creation.png);
+  }
+  ul.sidebar .activity {
+    background-image: url(../assets/images/icons/activity.png);
+  }
+  ul.sidebar .live {
+    background-image: url(../assets/images/icons/live.png);
+  }
+  ul.sidebar .member {
+    background-image: url(../assets/images/icons/da.png);
+  }
+  ul.sidebar .flow {
+    background-image: url(../assets/images/icons/server.png);
   }
   ul.setup-bar {
     display: flex;

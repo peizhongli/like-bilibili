@@ -22,6 +22,7 @@ export default new Router({
     {
       path: '/home',
       component: index,
+      redirect: '/home/recommend',
       children: [
         {
           path: 'live',
